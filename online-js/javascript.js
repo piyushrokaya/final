@@ -23,5 +23,21 @@
 //     console.log(a+b);
 // })
 
-//callback hell
+//callback hell:nested callbacks stacked below one another forming pyramid structure.
+// function getData(dataId,getNextData){
+//     setTimeout(() => {
+//         console.log("data",dataId);
+//        if( getNextData){
+//         getNextData();         //if getnextdata exists then only call getnextdata function
+//        }
+//     }, 2000);
+// }
+// getData(1,()=>{  //getData is callback cant use directly getData(2) so used arrow function it wont execute immediately
+//     console.log("loading data 2...")          
+//     getData(2);
+// });
 
+
+//to solve callback hell promises are used
+//promises
+//let promise=new Promise((resolve,reject)=>{...})
