@@ -120,24 +120,35 @@
 
 
 //async/await  
-function fetchData(){
-    return new Promise((resolve,reject)=>
-    {
-        setTimeout(() => {
-            const success=true;
-            if(success){
-                resolve("Data fetched");
-            }else{
-                reject("error fetching data");
-            }
+// function fetchData(){
+//     return new Promise((resolve,reject)=>
+//     {
+//         setTimeout(() => {
+//             const success=true;
+//             if(success){
+//                 resolve("Data fetched");
+//             }else{
+//                 reject("error fetching data");
+//             }
         
-        }, 2000);
-    })
-}
-async function displayData(){
-    console.log("initial")
-    const data=await fetchData();//await 
-    console.log(data)
-    console.log("final")
-}
-displayData();
+//         }, 2000);
+//     })
+// }
+// async function displayData(){
+//     console.log("initial")
+//     const data=await fetchData();//await 
+//     console.log(data)
+//     console.log("final")
+// }
+// displayData();
+
+
+//read from file
+// const fs=require("fs")
+// fs.readFile("nodejs.js",'utf8',(err,data)=>{
+// if(err){
+//     console.error("error",err)
+//     return;
+// }
+//     console.log("data:",data)
+// })
